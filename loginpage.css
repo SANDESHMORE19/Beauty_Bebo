@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #666;
+}
+.color{
+    color:white;
+}
+.main_section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main_container {
+    width: 85%;
+}
+
+.Custmer_loging {
+    margin-top: 10px;
+    
+}
+.Custmer_loging h2{
+    color: black;
+    font-size: 22px;
+}
+
+.social_media_main_container {
+    position: relative;
+}
+
+
+.social_media_loging {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    width: 50%;
+}
+
+.facebook_btn {
+    position: relative;
+    
+    font-size: 14px;
+    padding: 3px;
+    height: 38px;
+    width: 250px;
+    background-color: rgb(59, 89, 152);
+    border-radius: 3px;
+}
+
+
+.facebook {
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+
+}
+
+.facebooklogo {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 38px;
+    top: 0;
+    height: 36px;
+    border-right: 1px solid;
+    /* margin-top: 5px; */
+    background-color: rgb(59, 89, 152);
+}
+
+.gmail {
+    display: inline-block;
+}
+
+.gmail_btn {
+    position: relative;
+    color: white;
+    font-size: 14px;
+    padding: 3px;
+    height: 38px;
+    width: 250px;
+    background-color: rgb(221, 75, 57);
+    border-radius: 3px;
+}
+
+.Googlelogo {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 38px;
+    top: 0;
+    height: 36px;
+    border-right: 1px solid;
+}
+.social_media_loging_div{
+    display: flex;
+    justify-content: center;
+    /* padding: 20px 0px; */
+    width: 48.8%;
+    border: 1px solid #e3e1e1;
+}
+.registrion_main_contan{
+/* border-bottom: 1px solid; */
+margin: 15px;
+width: 100%;
+padding: 20px;
+font-family: 'Roboto';
+color: #666;
+height: 67vh;
+}
+.registrion{
+   padding-bottom: 5px;
+   border-bottom: 1px solid #e3e1e1;
+   font-size: 20px;
+   color: black;
+}
+.input_div{
+    margin: 20px 0px;
+    padding:20px 0px;
+}
+.input_Email,.account_option_para{
+    margin-bottom: 30px;
+}
+.input_password ,.input_description,.sign_btn{
+    margin-bottom: 30px;
+    
+}
+.input_password input,.input_Email input{
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #aca9a9;
+    text-decoration: none;
+    outline: none;
+}
+label{
+    color: #666666;
+    font-size: 14px;
+    font-weight: 600;
+}
+.sign_btn>button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-color: rgb(68,68,68);
+
+}
+.sign_btn>button:hover{
+    background-color: rgb(221,2,133);
+}
+.sign_btn>span{
+    color: black;
+}
+.sign_btn>span:hover{
+    color: rgb(221,2,133);
+}
+.social_media_loging_main_div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

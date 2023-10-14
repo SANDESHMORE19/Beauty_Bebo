@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+button:hover {
+    cursor: pointer;
+
+}
+
+.maindiv {
+    width: 100%;
+
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_option {
+    width: 85%;
+    /* background-color:yellow; */
+    border: 1px solid #efecec;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropbtn {
+    /* background-color: #04AA6D; */
+    /* color: rgb(39, 10, 10); */
+    padding: 6px 30px;
+    font-size: 14px;
+    color: #666;
+    font-family: 'Roboto';
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+}
+
+.dropbtn:hover {
+    box-shadow: 3px 2px 3px 2px rgba(0.5, 0.5, 0.5, 0.05);
+    color: rgb(221, 2, 133);
+}
+
+.dropdown {
+    position: relative;
+    /* display: inline-block; */
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    margin-bottom: 3px;
+    /* color: red; */
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 0%;
+    /* Position below the button */
+    left: 98.5%;
+    background-color: #f1f1f1;
+    min-width: 65vw;
+    height: 65vh;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 2px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 5px;
+    width: 150px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    color: #666;
+    font-family: 'Roboto';
+
+}
+
+.dropdown-content a:hover {
+    /* background-color: #ddd; */
+    color: rgb(221, 2, 133);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+
+.options {
+    width: 30%;
+    /* background-color: rgb(240, 239, 234); */
+    /* display: flex; */
+    justify-content: space-around;
+    height: 60vh;
+
+}
+
+.CATEGORIES {
+    font-size: 16.1px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 900;
+    color: #222222;
+}
+
+.all_categories {
+    margin-bottom: 5px;
+    padding-left: 30px;
+}
+
+.fa-solid {
+    padding-right: 1px;
+    font-size: 15px;
+}
+
+.fa-chevron-right {
+    font-size: 13px;
+    color: #666;
+}
+
+.text_color_category {
+    font-size: 14px;
+    color: #666;
+}
+
+.hero_section_image {
+    width: 921px;
+
+}
+
+.image1 {
+    width: 921px;
+    margin-right: 0px;
+    padding-left: 15px;
+}
+
+.slider_icon {
+    text-align: center;
+    height: 40px;
+}
+
+.card_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_div {
+    display: inline-block;
+    position: relative;
+    bottom: 0px;
+    width: 85%;
+    height: 2vh;
+    font-size: 16.1px;
+}
+
+.owl_dot {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.Deal_of_week {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.dropdown_option {
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+
+.hover_potner:hover {
+    cursor: pointer;
+}
+
+.dropdown_option_div_style {
+    margin-top: 20px;
+    padding-left: 10px;
+    width: 180px;
+}
+
+.hover_potner {
+    width: 400px;
+}
+
+.image_Bath_opton {
+    position: absolute;
+    right: 35px;
+
+}
+
+.card_div {
+    height: 40px;
+}
+
+.card_main_deal_of_week {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    justify-content: space-between;
+    border: 1px solid rgb(228, 228, 228);
+    padding: 10px;
+}
+
+.card {
+    width: 23%;
+    /* background-color: aqua; */
+    height: auto;
+}
+
+.price {
+
+    font-size: 12px;
+}
+
+
+.price,
+.new_price {
+    margin-right: 10px;
+}
+
+.new_price {
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(221, 2, 133);
+}
+
+.discount {
+    font-weight: 600;
+    font-size: 18px;
+    color: green;
+}
+
+.add_card_btn {
+    width: 140px;
+    height: 35px;
+    background-color: rgb(221, 2, 133);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.add_card_btn:hover {
+    opacity: 0.8;
+}
+
+.price_text {
+    border-left: 1px solid #efecec;
+    border-right: 1px solid #efecec;
+    text-align: center;
+    height: 100%;
+    font-family: 'Roboto';
+    color: #666;
+    cursor: pointer;
+}
+
+.price_text p {
+    margin-top: 5px;
+}
+
+.dicription:hover {
+    color: rgb(221, 2, 133);
+}
+
+.image_banner {
+    margin-top: 25px;
+    display: flex;
+    margin-top: 25px;
+    width: 85%;
+    justify-content: cente
+}
+
+.catgory_tab_div {
+
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    margin-top: 10px;
+
+}
+
+/* .catgory_tab img:hover{
+    filter: contrast(1.2); */
+
+.catgory_tab {
+    width: 16%;
+    /* background-color: rgb(221, 58, 165); */
+    text-align: center;
+    border-left: 1px solid #dadada;
+    height: 100px;
+    padding: 10px;
+    font-family: 'Roboto';
+    color: #666;
+    opacity: 1;
+
+
+
+}
+
+.catgory_tab:hover {
+    background-color: rgba(247, 94, 186, 0.999);
+    color: white;
+    filter: saturate(1);
+
+
+
+}
+
+.catgory_tab p {
+    margin-top: 10px;
+}
+
+.letest_most_best_section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.letest_most_best {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+
+}
+
+.best_seller {
+    width: 33%;
+    padding: 10px;
+
+}
+
+.letest_item {
+    width: 33%;
+    padding: 10px;
+
+}
+
+.heading_BEST_SELLER {
+    position: relative;
+    width: 110px;
+    border-bottom: 2px solid rgb(221, 2, 133);
+}
+
+.most_view {
+    width: 33%;
+    padding-top: 10px;
+}
+
+.child_div_best_seller {
+    border: 1px solid #dadada;
+}
+
+.best_card {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #dadada;
+    padding: 10px;
+    height: auto;
+
+}
+
+.best_discription {
+    margin-left: 10px;
+}
+
+.heading_LATEST_PRODUCTS {
+    position: relative;
+    width: 160px;
+    border-bottom: 2px solid rgb(221, 2, 133);
+}
+
+.heading_MOST_VIEWED {
+    position: relative;
+    width: 120px;
+    border-bottom: 2px solid rgb(221, 2, 133);
+}
+
+.image_banner2 {
+    display: flex;
+    width: 85%;
+    justify-content: center;
+}
+.herart_icon_imag{
+    vertical-align: baseline;
+}
+.herart_icon {
+    border-radius: 3px;
+    margin-left: 2px;
+    padding: 10px;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    color: white;
+    margin-top: 5px;
+    align-items: center;
+    background-color: #666;
+}
+
+.herart_icon:hover {
+    background-color: rgb(221, 2, 133);
+}
+
+.herart_icon_imag {
+    padding-top: 10px;
+}
+
+.description_section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.description_text {
+    width: 85%;
+    margin-top: 10px;
+}
+
+.description_text div {
+    color: #666;
+    margin-bottom: 50px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+#read-more-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: rgb(221, 2, 133);
+    font-size: 14px;
+    padding: 5px;
+}
+
+.link_para {
+    color: #222222;
+    cursor: pointer;
+}
+
+.link_para:hover {
+    color: rgb(221, 2, 133);
+}
+
+@media screen and (max-width: 1340px) {
+    .options {
+        display: none;
+    }
+    .hero{
+        
+    }
+
+    .hero_section_image {
+        width: auto;
+    }
+    .image_banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    }
+
+    .dropbtn {}
+
+    .options {}
+}
+@media screen and (max-width: 1340px) {
+.card_section
+}

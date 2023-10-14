@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Beautybebo</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="beautybebo CSS.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- bootstrap links -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
     <!-- Creating navbar  -->
     <div class="main">
@@ -24,10 +27,10 @@
                     <img src="images/main logo.png" alt="main logo">
                 </div>
                 <div class="second_div">
-                <div class="upper_main_search">
-                <select name="All items" id="selector" aria-placeholder="All Categories" >
-                    <optgroup label="All Categories">
-                        <optgroup label="make up">
+                    <div class="upper_main_search">
+                        <select name="All items" id="selector" aria-placeholder="All Categories">
+                            <optgroup label="All Categories">
+                            <optgroup label="make up">
                             <optgroup label="Face">
                                 <option value=""> Foundation</option>
                                 <option value=""> Blush</option>
@@ -39,33 +42,55 @@
                                 <option value="">Eye liner</option>
                                 <option value="">Mascara</option>
                             </optgroup>
-                        </optgroup>
-                    </optgroup>
-                </select>
-            </div>
-            <!-- <div class="line_main"><div class="line"><img src="images/icons8-vertical-line-48.png" alt=""> </div></div> -->
-            <div class="search">
-                <input type="text" name="Enter your search" placeholder="Enter your search..." id="inputSearch" style=" text-align:left;; font-size: 12px; padding-left: 16px; ">
-            </div>
-            <div class="search_btn">
-                <!-- <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> -->
-                <div class="btn">
-                    <img src="images/magnifying-glass-solid.svg" id="searchbtn" alt="search button" style="color: #ffffff;">
+                            </optgroup>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <!-- <div class="line_main"><div class="line"><img src="images/icons8-vertical-line-48.png" alt=""> </div></div> -->
+                    <div class="search">
+                        <input type="text" name="Enter your search" placeholder="Enter your search..." id="inputSearch"
+                            style=" text-align:left;; font-size: 12px; padding-left: 16px; ">
+                    </div>
+                    <div class="search_btn">
+                        <!-- <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> -->
+                        <div class="searchwalabtn">
+                            <img src="images/magnifying-glass-solid.svg" id="searchbtn" alt="search button"
+                                style="color: #ffffff;">
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
                 <div class="upper_main_account">
                     <div class="div_wishlist">
                         <div class="wishlist">
                             <div class="div1">
-                                <img src="images/heart-solid.svg" alt="wishlist" id="heart" >
+                                <img src="images/heart-solid.svg" alt="wishlist" id="heart">
                             </div>
                         </div>
                     </div>
-                   
-                    <div class="user">
+
+                    <!-- <div class="user" onclick="login()">
                         <div class="div2"><img src="images/user-solid.svg" alt=""></div>
+                       
+                    </div> -->
+                    <div class="user">
+                        <div class="dropdown">
+                            <span><div class="div2"><img src="images/user-solid.svg" alt=""></div></span>
+                            <div class="dropdown-content_nav">
+                                <div class="inner-content">
+                                    <div class="eye-content">
+                                        <a href="logingpage.html" style="color: #343232;" onclick="login()">Log in</a>
+                                        <br>
+                                        <a href="#" style="color: #343232;">Register</a>
+                                        <!-- <p>Log in</p> 
+                                        <p>Register</p> -->
+                                    </div>
+                                    
+                                </div>
+    
+                            </div>
+                        </div>
                     </div>
+                    
                     <div class="account">
                         <div class="div3">My Account</div>
                     </div>
@@ -73,247 +98,1124 @@
             </div>
         </div>
         <div class="lower">
-            <div class="lower2">
-            <div class="lower_makeup">
-                <select name="" id="">
-                    <optgroup label="Face">
-                        <option value="">BB CREAM</option>
-                           <option > Blush</option>
-                           <option > Bronzer</option>
-                           <option > CC Cream</option>
-                           <option > Contour</option>
-                           <option > Concealer</option>
-                           <option > Compact & Powder</option>
-                           <option > Face Primer</option>
-                           <option > Foundation</option>
-                           <option > Highlighters</option>
-                           <option > Loose Powder</option>
-                           <option > Makeup Kits</option>
-                           <option > Makeup Remover</option>
-                           <option > Setting Spray</option>
-                    </optgroup>
-                    <optgroup label="Eye">
-                        <option > Blush</option>
-                           <option > Bronzer</option>
-                           <option > CC Cream</option>
-                           <option > Contour</option>
-                           <option > Concealer</option>
-                           <option > Compact & Powder</option>
-                           <option > Face Primer</option>
-                           <option > Foundation</option>
-                           <option > Highlighters</option>
-                           <option > Loose Powder</option>
-                           <option > Makeup Kits</option>
-                           <option > Makeup Remover</option>
-                           <option > Setting Spray</option>
-                    </optgroup>
-                </select>
+            <div class="lower_middle">
+                <div class="lower2">
+                    <div class="dropdown">
+                        <span>MAKEUP &#9660;</span>
+                        <div class="dropdown-content_nav">
+                            <div class="inner-content">
+                                <div class="eye-content">
+                                    <h4>face</h4>
+                                    <p>BB Cream</p>
+                                    <p>Blush</p>
+                                    <p>CC Cream</p>
+                                    <p>Concealer</p>
+                                    <p>Face Primer</p>
+                                    <p>Makeup Remover</p>
+                                    <p>Highlighters</p>
+                                </div>
+                                <div class="eye-content">
+                                    <h4>Eye</h4>
+                                    <p>contact lenses</p>
+                                    <p>Eye kit</p>
+                                    <p>Eyeliner</p>
+                                    <p>Eye shadow</p>
+                                    <p>Eye primer</p>
+                                    <p>Eye-palettes</p>
+                                </div>
+                                <div class="eye-content">
+                                    <h4>Lips</h4>
+                                    <p>Lipstick</p>
+                                    <p>Liquid Lipstick</p>
+                                    <p>Lip Liner</p>
+                                    <p>Lip Gloss </p>
+                                    <p>Lip Balm </p>
+                                    <p>Lip stain</p>
+                                    <p>Lip Plumper</p>
+                                </div>
+                                <div class="eye-content">
+                                    <h4>Nails</h4>
+                                    <p>Manicure & Pedicure Kits</p>
+                                    <p>Nail Polish</p>
+                                    <p>Nail Care</p>
+                                    <p>Nail Polish Sets</p>
+                                    <p>Nail Art kits</p>
+                                    <p>Nail Polish Remover</p>
+                                </div>
+                                <div class="eye-content">
+                                    <h4>Tools Brushes</h4>
+                                    <p>Blush Brush</p>
+                                    <p>Eyelash Curlers</p>
+                                    <p>Eye Brush</p>
+                                    <p>Face Brush</p>
+                                    <p>Lip Brush</p>
+                                    <p>Makeup Pouches</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="dropdown">
+                        <span>SKIN &#9660;</span>
+                        <div class="dropdown-content_nav">
+                            <div class="inner-content">
+                                <div class="eye-content">
+                                    <h4>Eye Care</h4>
+                                    <p>Dark Circles</p>
+                                    <p>Eye Cream</p>
+                                    <p>Eye Masks</p>
+                                </div>
+                                <div class="eye-content">
+                                    <h4>Face care</h4>
+                                    <p>Enti Ageing Creams</p>
+                                    <p>Bleach Creams</p>
+                                    <p>Face Wash</p>
+                                </div>
+                                <div class="eye-content">
+                                    <h4>Body care</h4>
+                                    <p>All Cream</p>
+                                    <p>Body Moisturizers</p>
+                                    <p>Body Toners</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="dropdown">
+                        <span>HAIR &#9660;</span>
+                        <div class="dropdown-content_nav">
+                            <div class="inner-content">
+                                <div class="eye-content">
+                                    <h4>Hair Care</h4>
+                                    <p>Dandruff</p>
+                                    <p>Dry Shampoo</p>
+                                    <p>Hair spray</p>
+                                    <p>Hair Styling </p>
+                                    <p>Straighteners</p>
+                                </div>
+                                <div class="eye-content">
+                                    <h4>Hair Loss</h4>
+                                    <p>Conditioner</p>
+                                    <p>Hair Oil</p>
+                                    <p>Hair serum</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="dropdown">
+                        <span>PERSONAL CARE &#9660;</span>
+                        <div class="dropdown-content_nav">
+                            <div class="inner-content">
+                                <div class="eye-content">
+                                    <h4>Bath & Body</h4>
+                                    <p>Body Cleansers</p>
+                                    <p>Body Wash</p>
+                                    <p>Creams</p>
+                                </div>
+                                <div class="eye-content">
+                                    <h4>Bathing Accessories</h4>
+                                    <p>Bath Brushes</p>
+                                    <p>Sponges</p>
+                                    <p>Loofahs</p>
+                                </div>
+                                <div class="eye-content">
+                                    <h4>Bath & Shower</h4>
+                                    <p>Body Soaps</p>
+                                    <p>Shower Gel</p>
+
+                                </div> 
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="dropdown">
+                            <span>MOM & BABY CARE &#9660;</span>
+                            <div class="dropdown-content_nav">
+                                <div class="inner-content">
+                                    <div class="eye-content">
+                                        <h4>Baby Care</h4>
+                                        <p>Bath Time</p>
+                                        <p>Diapers</p>
+                                        <p>Powder</p> <p>Soaps</p>
+                                        <p>Oils</p>
+                                    </div>
+                                    <div class="eye-content">
+                                        <h4>Mom Care</h4>
+                                        <p>Lotions & Creams</p>
+                                        <p>Personal Care</p>
+                                        
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+    
+                        <div class="dropdown">
+                            <span>FRAGRANCE &#9660;</span>
+                            <div class="dropdown-content_nav">
+                                <div class="inner-content">
+                                    <div class="eye-content">
+                                        <p>Perfumes</p>
+                                        <p>Deodorants for men</p>
+                                    </div>
+                                    
+                                </div>
+    
+                            </div>
+                        </div>
+
+
+                        <div class="dropdown">
+                            <span>WOMEN FASHION &#9660;</span>
+                            <div class="dropdown-content_nav">
+                                <div class="inner-content">
+                                    <div class="eye-content">
+                                        <p>Lehenga</p>
+                                        <p>Sarees</p>
+                                        <p>Kurtis</p>
+                                        <p>Salwar Kameez</p>
+                                        <p>Gowns</p>
+                                        
+                                    </div>
+                                    
+                                </div>
+    
+                            </div>
+                        </div>
+
+
+                        <div class="dropdown">
+                            <span>FRAGRANCE &#9660;</span>
+                            <div class="dropdown-content_nav">
+                                <div class="inner-content">
+                                    <div class="eye-content">
+                                        <p>Perfumes</p>
+                                        <p>Deodorants for men</p>
+                                    </div>
+                                    
+                                </div>
+    
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                    
+
+                    
+                    <div class="mycart"><img src="images/bag-shopping-solid.svg" alt=""
+                            style="height: 18px; width: 20px; color: #ffffff;"> MY CART</div>
+                </div>
+
             </div>
 
-
-            <div class="lower_makeup">
-                <select name="" id="">
-                    <optgroup label="Face">
-                        <option value="">BB CREAM</option>
-                           <option > Blush</option>
-                           <option > Bronzer</option>
-                           <option > CC Cream</option>
-                           <option > Contour</option>
-                           <option > Concealer</option>
-                           <option > Compact & Powder</option>
-                           <option > Face Primer</option>
-                           <option > Foundation</option>
-                           <option > Highlighters</option>
-                           <option > Loose Powder</option>
-                           <option > Makeup Kits</option>
-                           <option > Makeup Remover</option>
-                           <option > Setting Spray</option>
-                    </optgroup>
-                    <optgroup label="Eye">
-                        <option > Blush</option>
-                           <option > Bronzer</option>
-                           <option > CC Cream</option>
-                           <option > Contour</option>
-                           <option > Concealer</option>
-                           <option > Compact & Powder</option>
-                           <option > Face Primer</option>
-                           <option > Foundation</option>
-                           <option > Highlighters</option>
-                           <option > Loose Powder</option>
-                           <option > Makeup Kits</option>
-                           <option > Makeup Remover</option>
-                           <option > Setting Spray</option>
-                    </optgroup>
-                </select>
-            </div>
-
-            <div class="lower_makeup">
-                <select name="" id="">
-                    <optgroup label="Face">
-                        <option value="">BB CREAM</option>
-                           <option > Blush</option>
-                           <option > Bronzer</option>
-                           <option > CC Cream</option>
-                           <option > Contour</option>
-                           <option > Concealer</option>
-                           <option > Compact & Powder</option>
-                           <option > Face Primer</option>
-                           <option > Foundation</option>
-                           <option > Highlighters</option>
-                           <option > Loose Powder</option>
-                           <option > Makeup Kits</option>
-                           <option > Makeup Remover</option>
-                           <option > Setting Spray</option>
-                    </optgroup>
-                    <optgroup label="Eye">
-                        <option > Blush</option>
-                           <option > Bronzer</option>
-                           <option > CC Cream</option>
-                           <option > Contour</option>
-                           <option > Concealer</option>
-                           <option > Compact & Powder</option>
-                           <option > Face Primer</option>
-                           <option > Foundation</option>
-                           <option > Highlighters</option>
-                           <option > Loose Powder</option>
-                           <option > Makeup Kits</option>
-                           <option > Makeup Remover</option>
-                           <option > Setting Spray</option>
-                    </optgroup>
-                </select>
-            </div>
-
-            <div class="lower_makeup">
-                <select name="" id="">
-                    <optgroup label="Face">
-                        <option value="">BB CREAM</option>
-                           <option > Blush</option>
-                           <option > Bronzer</option>
-                           <option > CC Cream</option>
-                           <option > Contour</option>
-                           <option > Concealer</option>
-                           <option > Compact & Powder</option>
-                           <option > Face Primer</option>
-                           <option > Foundation</option>
-                           <option > Highlighters</option>
-                           <option > Loose Powder</option>
-                           <option > Makeup Kits</option>
-                           <option > Makeup Remover</option>
-                           <option > Setting Spray</option>
-                    </optgroup>
-                    <optgroup label="Eye">
-                        <option > Blush</option>
-                           <option > Bronzer</option>
-                           <option > CC Cream</option>
-                           <option > Contour</option>
-                           <option > Concealer</option>
-                           <option > Compact & Powder</option>
-                           <option > Face Primer</option>
-                           <option > Foundation</option>
-                           <option > Highlighters</option>
-                           <option > Loose Powder</option>
-                           <option > Makeup Kits</option>
-                           <option > Makeup Remover</option>
-                           <option > Setting Spray</option>
-                    </optgroup>
-                </select>
-            </div>
-
-
-
-            <div class="lower_makeup">
-                <select name="" id="">
-                    <optgroup label="Face">
-                        <option value="">BB CREAM</option>
-                           <option > Blush</option>
-                           <option > Bronzer</option>
-                           <option > CC Cream</option>
-                           <option > Contour</option>
-                           <option > Concealer</option>
-                           <option > Compact & Powder</option>
-                           <option > Face Primer</option>
-                           <option > Foundation</option>
-                           <option > Highlighters</option>
-                           <option > Loose Powder</option>
-                           <option > Makeup Kits</option>
-                           <option > Makeup Remover</option>
-                           <option > Setting Spray</option>
-                    </optgroup>
-                    <optgroup label="Eye">
-                        <option > Blush</option>
-                           <option > Bronzer</option>
-                           <option > CC Cream</option>
-                           <option > Contour</option>
-                           <option > Concealer</option>
-                           <option > Compact & Powder</option>
-                           <option > Face Primer</option>
-                           <option > Foundation</option>
-                           <option > Highlighters</option>
-                           <option > Loose Powder</option>
-                           <option > Makeup Kits</option>
-                           <option > Makeup Remover</option>
-                           <option > Setting Spray</option>
-                    </optgroup>
-                </select>
-            </div>
-
-
-
-
-            <div class="lower_makeup">
-                <select name="" id="">
-                    <optgroup label="Face">
-                        <option value="">BB CREAM</option>
-                           <option > Blush</option>
-                           <option > Bronzer</option>
-                           <option > CC Cream</option>
-                           <option > Contour</option>
-                           <option > Concealer</option>
-                           <option > Compact & Powder</option>
-                           <option > Face Primer</option>
-                           <option > Foundation</option>
-                           <option > Highlighters</option>
-                           <option > Loose Powder</option>
-                           <option > Makeup Kits</option>
-                           <option > Makeup Remover</option>
-                           <option > Setting Spray</option>
-                    </optgroup>
-                    <optgroup label="Eye">
-                        <option > Blush</option>
-                           <option > Bronzer</option>
-                           <option > CC Cream</option>
-                           <option > Contour</option>
-                           <option > Concealer</option>
-                           <option > Compact & Powder</option>
-                           <option > Face Primer</option>
-                           <option > Foundation</option>
-                           <option > Highlighters</option>
-                           <option > Loose Powder</option>
-                           <option > Makeup Kits</option>
-                           <option > Makeup Remover</option>
-                           <option > Setting Spray</option>
-                    </optgroup>
-                </select>
-            </div>
-
-
-
-
-            
-
-            
         </div>
-        <div class="mycart"><img src="images/bag-shopping-solid.svg" alt="" style="height: 18px; width: 20px; color: #ffffff;"> MY CART</div>
-    </div>
-   
-    </div>
 
-    <div class="lower_header">
+        <!-- <div class="lower_header">
         <span style="margin-right: 5px;">Home <img src="images/icons8-more-than-50.png" alt="" style="height: 15px; width: 20px; margin-right: 8px; margin-left: 8px;">Face</span>
-    </div>
-    <!-- navbar till here -->
+    </div> -->
+        <!-- navbar till here -->
+        <div class="all">
+            <!-- <div class="middle_div"> -->
+                <section class="maindiv">
+                    <div class="hero">
+                        <div class="hero_option">
+                            <div class="options">
+                                <div class="icon_menu">
+                                    <div class="all_categories">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i><i class="fa-solid fa-bars"></i><span
+                                            class="CATEGORIES">All CATEGORIES</span>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropbtn">
+            
+                                            <div>
+                                                <img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/makeup-small.png"
+                                                    alt=""> <span>Makeup</span>
+                                            </div>
+                                            <div> &#10095</div>
+                                        </button>
+            
+                                        <div class="dropdown-content">
+                                            <div class="dropdown_option">
+                                                <div class="dropdown_option_div_style">
+                                                    <a href="#">
+                                                        <h3 class="hover_potner">EYE</h3>
+                                                    </a>
+                                                    <a class="hover_potner" href="#">Contact Lenses </a>
+                                                    <a class="hover_potner" href="#"> Eye Kit</a>
+                                                    <a class="hover_potner" href="#"> Eyeliner</a>
+                                                    <a class="hover_potner" href="#">Eye Shadow</a>
+                                                    <a class="hover_potner" href="#">Eye Primer</a>
+                                                    <a class="hover_potner" href="#">Eye-Palettes</a>
+                                                    <a class="hover_potner" href="#">Eye Makeup Remover</a>
+                                                    <a class="hover_potner" href="#">Eye Brow Enhancers</a>
+                                                    <a class="hover_potner" href="#">False Eyelashes</a>
+                                                    <a class="hover_potner" href="#">Kajal</a>
+                                                    <a class="hover_potner" href="#">Mascara</a>
+                                                    <a class="hover_potner" href="#">Under Eye Concealer</a>
+            
+                                                </div>
+            
+                                                <div class="dropdown_option_div_style">
+                                                    <a href="#">
+                                                        <h3 class="hover_potner">FACE</h3>
+                                                    </a>
+                                                    <a class="hover_potner" href="#">BB Cream </a>
+                                                    <a class="hover_potner" href="#"> Blush</a>
+                                                    <a class="hover_potner" href="#"> Bronzer</a>
+                                                    <a class="hover_potner" href="#">CC Cream</a>
+                                                    <a class="hover_potner" href="#">Contour</a>
+                                                    <a class="hover_potner" href="#">Concealers</a>
+                                                    <a class="hover_potner" href="#">Compact & Powder</a>
+                                                    <a class="hover_potner" href="#">Face Primer</a>
+                                                    <a class="hover_potner" href="#">Foundation</a>
+                                                    <a class="hover_potner" href="#">Highlighters</a>
+                                                    <a class="hover_potner" href="#">Loose Powder</a>
+                                                    <a class="hover_potner" href="#">Makeup Kits</a>
+                                                    <a class="hover_potner" href="#">Makeup Remover</a>
+                                                    <a class="hover_potner" href="#">Setting Spray</a>
+            
+                                                </div>
+                                                <div class="dropdown_option_div_style">
+                                                    <a href="#">
+                                                        <h3 class="hover_potner">LIPS</h3>
+                                                    </a>
+                                                    <a class="hover_potner" href="#">Lipstick </a>
+                                                    <a class="hover_potner" href="#"> Liquid Lipstick</a>
+                                                    <a class="hover_potner" href="#"> Lip Liner</a>
+                                                    <a class="hover_potner" href="#">Lip Gloss</a>
+                                                    <a class="hover_potner" href="#"> Lip Balm</a>
+                                                    <a class="hover_potner" href="#">Lip Crayon</a>
+                                                    <a class="hover_potner" href="#">Lip Stain</a>
+                                                    <a class="hover_potner" href="#">Lip Plumper</a>
+            
+                                                </div>
+                                                <div class="dropdown_option_div_style">
+                                                    <a href="#">
+                                                        <h3 class="hover_potner">NAILS</h3>
+                                                    </a>
+                                                    <a class="hover_potner" href="#">Manicure & Pedicure Kits </a>
+                                                    <a class="hover_potner" href="#">Nail Polish</a>
+                                                    <a class="hover_potner" href="#"> Nail Care</a>
+                                                    <a class="hover_potner" href="#">Nail Polish Sets</a>
+                                                    <a class="hover_potner" href="#"> Nail Art Kits</a>
+                                                    <a class="hover_potner" href="#">Nail Polish Remover</a>
+                                                </div>
+                                                <div class="dropdown_option_div_style">
+                                                    <a href="#">
+                                                        <h3 class="hover_potner">TOOLS BRUSHES</h3>
+                                                    </a>
+                                                    <a class="hover_potner" href="#">Blush Brush </a>
+                                                    <a class="hover_potner" href="#">Eyelash Curlers</a>
+                                                    <a class="hover_potner" href="#"> Eye Brush</a>
+                                                    <a class="hover_potner" href="#">Face Brush</a>
+                                                    <a class="hover_potner" href="#"> Lip Brush</a>
+                                                    <a class="hover_potner" href="#">Makeup Pouches</a>
+                                                    <a class="hover_potner" href="#"> Mirrors</a>
+                                                    <a class="hover_potner" href="#">Sponges & Applicators</a>
+                                                    <a class="hover_potner" href="#"> Sharpeners</a>
+                                                    <a class="hover_potner" href="#">Tweezers</a>
+            
+                                                </div>
+                                                <div class="dropdown_option_div_style"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="dropbtn">
+            
+                                        <div>
+                                            <img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/skin-small.png"
+                                                alt=""> <span>Skin</span>
+                                        </div>
+                                        <div> &#10095</div>
+                                    </button>
+            
+                                    <div class="dropdown-content">
+                                        <div class="dropdown_option">
+                                            <div class="dropdown_option_div_style">
+                                                <a href="#">
+                                                    <h3 class="hover_potner">BODY CARE</h3>
+                                                </a>
+                                                <a class="hover_potner" href="#">All Cream </a>
+                                                <a class="hover_potner" href="#"> Body Moisturizers</a>
+                                                <a class="hover_potner" href="#"> Body Toners</a>
+                                                <a class="hover_potner" href="#">Body Sun Care</a>
+                                                <a class="hover_potner" href="#">Brightening Lotion</a>
+                                                <a class="hover_potner" href="#">Dark Circles & Wrinkles</a>
+                                                <a class="hover_potner" href="#">Day Cream</a>
+                                                <a class="hover_potner" href="#">Foot Cream</a>
+                                                <a class="hover_potner" href="#">Hair Remover Creams</a>
+                                                <a class="hover_potner" href="#">Hand Creams</a>
+                                                <a class="hover_potner" href="#">Hands & Feet</a>
+                                                <a class="hover_potner" href="#">Kits & Combos</a>
+                                                <a class="hover_potner" href="#">Night Cream</a>
+                                                <a class="hover_potner" href="#">Neck Creamss</a>
+            
+                                            </div>
+            
+                                            <div class="dropdown_option_div_style">
+                                                <a href="#">
+                                                    <h3 class="hover_potner">FACE</h3>
+                                                </a>
+                                                <a class="hover_potner" href="#">BB Cream </a>
+                                                <a class="hover_potner" href="#"> Blush</a>
+                                                <a class="hover_potner" href="#"> Bronzer</a>
+                                                <a class="hover_potner" href="#">CC Cream</a>
+                                                <a class="hover_potner" href="#">Contour</a>
+                                                <a class="hover_potner" href="#">Concealers</a>
+                                                <a class="hover_potner" href="#">Compact & Powder</a>
+                                                <a class="hover_potner" href="#">Face Primer</a>
+                                                <a class="hover_potner" href="#">Foundation</a>
+                                                <a class="hover_potner" href="#">Highlighters</a>
+                                                <a class="hover_potner" href="#">Loose Powder</a>
+                                                <a class="hover_potner" href="#">Makeup Kits</a>
+                                                <a class="hover_potner" href="#">Makeup Remover</a>
+                                                <a class="hover_potner" href="#">Setting Spray</a>
+            
+                                            </div>
+                                            <div class="dropdown_option_div_style">
+                                                <a href="#">
+                                                    <h3 class="hover_potner">LIPS</h3>
+                                                </a>
+                                                <a class="hover_potner" href="#">Lipstick </a>
+                                                <a class="hover_potner" href="#"> Liquid Lipstick</a>
+                                                <a class="hover_potner" href="#"> Lip Liner</a>
+                                                <a class="hover_potner" href="#">Lip Gloss</a>
+                                                <a class="hover_potner" href="#"> Lip Balm</a>
+                                                <a class="hover_potner" href="#">Lip Crayon</a>
+                                                <a class="hover_potner" href="#">Lip Stain</a>
+                                                <a class="hover_potner" href="#">Lip Plumper</a>
+                                            </div>
+                                            <div class="dropdown_option_div_style"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="dropbtn">
+            
+                                        <div>
+                                            <img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/hair-small.png"
+                                                alt=""> <span>Hair</span>
+                                        </div>
+                                        <div> &#10095</div>
+                                    </button>
+            
+                                    <div class="dropdown-content">
+                                        <div class="dropdown_option">
+                                            <div class="dropdown_option_div_style">
+                                                <a href="#">
+                                                    <h3 class="hover_potner">HAIR CARE </h3>
+                                                </a>
+                                                <a class="hover_potner" href="#">Color Protection </a>
+                                                <a class="hover_potner" href="#"> Dandruff</a>
+                                                <a class="hover_potner" href="#"> Dry Shampoo</a>
+                                                <a class="hover_potner" href="#">Gels & Waxes</a>
+                                                <a class="hover_potner" href="#">Hair Spray</a>
+                                                <a class="hover_potner" href="#"> Hair Color/ Dye</a>
+                                                <a class="hover_potner" href="#">Hair Creams & Masks</a>
+                                                <a class="hover_potner" href="#">Hair Styling</a>
+                                                <a class="hover_potner" href="#">Hair Remover Creams</a>
+                                                <a class="hover_potner" href="#"> Hairfall & Thinning</a>
+                                                <a class="hover_potner" href="#">Straighteners</a>
+                                            </div>
+            
+                                            <div class="dropdown_option_div_style">
+                                                <a href="#">
+                                                    <h3 class="hover_potner">HAIR LOSS
+            
+            
+            
+            
+                                                    </h3>
+                                                </a>
+                                                <a class="hover_potner" href="#">Conditioner </a>
+                                                <a class="hover_potner" href="#"> Hair Oil</a>
+                                                <a class="hover_potner" href="#"> Hair Serum</a>
+                                                <a class="hover_potner" href="#">Hair Growth solutions</a>
+                                                <a class="hover_potner" href="#">Shampoo</a>
+            
+                                            </div>
+                                            <div class="dropdown_option_div_style">
+            
+                                                <a class="hover_potner" href="#"><img
+                                                        src="https://www.beautybebo.com/pub/media/mega-menu/hair.png" width="597px"
+                                                        height="221px" alt=""> </a>
+                                            </div>
+                                            <div class="dropdown_option_div_style"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="dropbtn">
+            
+                                        <div>
+                                            <img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/personal-care-small.png"
+                                                alt=""> <span>Personal Care</span>
+                                        </div>
+                                        <div> &#10095</div>
+                                    </button>
+            
+                                    <div class="dropdown-content">
+                                        <div class="dropdown_option">
+                                            <div class="dropdown_option_div_style">
+                                                <a href="#">
+                                                    <h3 class="hover_potner">BATH & BODY</h3>
+                                                </a>
+                                                <a class="hover_potner" href="#">Body Cleansers </a>
+                                                <a class="hover_potner" href="#"> Body Massage Oil</a>
+                                                <a class="hover_potner" href="#">Body Wash</a>
+                                                <a class="hover_potner" href="#">Creams</a>
+                                                <a class="hover_potner" href="#">Essential Oils</a>
+                                                <a class="hover_potner" href="#">Foot Cream</a>
+                                                <a class="hover_potner" href="#">Scrubs & Exfoliants</a>
+                                                <a class="hover_potner" href="#">Foot Cream</a>
+                                                <a class="hover_potner" href="#">Hair Remover Creams</a>
+                                                <a class="hover_potner" href="#">Ubtan & Face Packs</a>
+            
+                                            </div>
+            
+                                            <div class="dropdown_option_div_style">
+                                                <a href="#">
+                                                    <h3 class="hover_potner">BATH & SHOWER</h3>
+                                                </a>
+                                                <a class="hover_potner" href="#">Body Soaps </a>
+                                                <a class="hover_potner" href="#"> Shower Gel</a>
+            
+                                            </div>
+                                            <div class="dropdown_option_div_style">
+                                                <a href="#">
+                                                    <h3 class="hover_potner">BATHING ACCESSORIES </h3>
+                                                </a>
+                                                <a class="hover_potner" href="#">Bath Brushes </a>
+                                                <a class="hover_potner" href="#"> Loofahs</a>
+                                                <a class="hover_potner" href="#"> Shower Capsr</a>
+                                                <a class="hover_potner" href="#">Sponges</a>
+                                            </div>
+                                            <div class="dropdown_option_div_style">
+                                                <img class="image_Bath_opton"
+                                                    src="https://www.beautybebo.com/pub/media/sm/makeup.png" width="268px"
+                                                    height="402px" alt="">
+                                            </div>
+                                            <div class="dropdown_option_div_style"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="dropbtn">
+            
+                                        <div>
+                                            <img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/mom-baby-care-small.png"
+                                                alt=""> <span>Mom & Baby Care</span>
+                                        </div>
+                                        <div>
+                                            <div> &#10095</div>
+                                        </div>
+                                    </button>
+            
+                                    <div class="dropdown-content">
+                                        <div class="dropdown_option">
+                                            <div class="dropdown_option_div_style">
+                                                <a href="#">
+                                                    <h3 class="hover_potner">BABY CARE</h3>
+                                                </a>
+                                                <a class="hover_potner" href="#">Bath time </a>
+                                                <a class="hover_potner" href="#"> Diapers</a>
+                                                <a class="hover_potner" href="#">Lotions & Creams</a>
+                                                <a class="hover_potner" href="#">Oils</a>
+                                                <a class="hover_potner" href="#"> Powder</a>
+                                                <a class="hover_potner" href="#">Shampoo</a>
+                                                <a class="hover_potner" href="#">Soaps</a>
+                                                <a class="hover_potner" href="#">Sterilizer & Cleaners</a>
+                                                <a class="hover_potner" href="#">Rash Cream</a>
+                                                <a class="hover_potner" href="#">Wipes</a>
+            
+                                            </div>
+                                            <div class="dropdown_option_div_style">
+                                                <a href="#">
+                                                    <h3 class="hover_potner">MOM CARE
+                                                    </h3>
+                                                </a>
+                                                <a class="hover_potner" href="#">Lotions & Creams </a>
+                                                <a class="hover_potner" href="#"> personal Care</a>
+                                            </div>
+                                            <div class="dropdown_option_div_style">
+                                                <img class="image_Bath_opton"
+                                                    src="https://www.beautybebo.com/pub/media/mega-menu/baby_care.png" width="580px"
+                                                    height="330px" alt="">
+                                            </div>
+                                            <div class="dropdown_option_div_style"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="dropbtn">
+            
+                                        <div>
+                                            <img src="https://www.beautybebo.com/pub/media/fragrance.png" alt="">
+                                            <span>Fragrance</span>
+                                        </div>
+            
+                                    </button>
+            
+            
+                                </div>
+                                <div class="dropdown">
+                                    <button class="dropbtn">
+            
+                                        <div>
+                                            <img src="https://www.beautybebo.com/pub/media/ayurveda.png" alt="">
+                                            <span>Ayurveda</span>
+                                        </div>
+            
+                                    </button>
+            
+            
+                                </div>
+                            </div>
+                            <div class="hero_section_image">
+                                <img src="https://www.beautybebo.com/pub/media/ads/slidrr.png"
+                                    class="image1"  alt="">
+                                <div class="slider_icon">ext</div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="card_section">
+                        <div class="card_div">
+                            <div class="Deal_of_week" style="display: inline-block;">Deal Of Week</div>
+                            <div class="owl_dot" style="display: inline-block;">**</div>
+                        </div>
+                        <div class="card_main_deal_of_week">
+                            <div class=" card card1">
+                                <div class="price_text">
+                                    <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/eaadabc6126fdee9eef2f7b7c34a8f4b/1/6/16_17_3.jpg"
+                                        width="236px" height="236px" alt="">
+                                    <p class="dicription">Lakme Absolute Perfect Radiance Skin Brightening Light Cream</p>
+                                    <p>review</p>
+                                    <span class="price"><s>₹3,900.00</s></span>
+                                    <span class="new_price">₹1,699.00</span>
+                                    <span class="discount"> 11% off</span>
+                                    <button class="add_card_btn"><i class="fa-solid fa-basket-shopping"></i> Add To Card</button>
+                                    <span class="herart_icon"><img class="herart_icon_imag" src="download-removebg-preview (1).png"
+                                            width="15px" height="23px"></span>
+            
+                                </div>
+                            </div>
+                            <div class=" card card2">
+                                <div class="price_text">
+                                    <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/eaadabc6126fdee9eef2f7b7c34a8f4b/p/p/ppd200g_540x.jpg"
+                                        width="236px" height="236px" alt="">
+                                    <p class="dicription">Lakme Absolute Perfect Radiance Skin Brightening Light Cream</p>
+                                    <p>review</p>
+                                    <span class="price"><s>₹3,900.00</s></span>
+                                    <span class="new_price">₹1,699.00</span>
+                                    <span class="discount"> 50% off</span>
+                                    <button class="add_card_btn"><i class="fa-solid fa-basket-shopping"></i> Add To Card</button>
+            
+                                    <span class="herart_icon"><img class="herart_icon_imag" src="download-removebg-preview (1).png"
+                                            width="15px" height="23px"></span>
+                                </div>
+                            </div>
+                            <div class=" card card3">
+                                <div class="price_text">
+                                    <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/eaadabc6126fdee9eef2f7b7c34a8f4b/m/a/mama14.jpg"
+                                        width="236px" height="236px" alt="">
+                                    <p class="dicription">Lakme Absolute Perfect Radiance Skin Brightening Light Cream</p>
+                                    <p>review</p>
+                                    <span class="price"><s>₹3,900.00</s></span>
+                                    <span class="new_price">₹1,699.00</span>
+                                    <span class="discount"> 50% off</span>
+                                    <button class="add_card_btn"><i class="fa-solid fa-basket-shopping"></i> Add To Card</button>
+                                    <span class="herart_icon"><img class="herart_icon_imag" src="download-removebg-preview (1).png"
+                                            width="15px" height="23px"></span>
+            
+                                </div>
+                            </div>
+                            <div class=" card card4">
+                                <div class="price_text">
+                                    <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/eaadabc6126fdee9eef2f7b7c34a8f4b/2/0/2001_52959787970_o-min.jpg"
+                                        width="225px" height="300px" alt="">
+                                    <p class="dicription">Lakme Absolute Perfect Radiance Skin Brightening Light Cream</p>
+                                    <p>review</p>
+                                    <span class="price"><s>₹3,900.00</s></span>
+                                    <span class="new_price">₹1,699.00</span>
+                                    <span class="discount"> 50% off</span>
+                                    <button class="add_card_btn"><i class="fa-solid fa-basket-shopping"></i> Add To Card</button>
+                                    <span class="herart_icon"><img class="herart_icon_imag" src="download-removebg-preview (1).png"
+                                            width="15px" height="23px"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image_banner">
+                            <img class="image2" src="https://www.beautybebo.com/pub/media/ads/home_multi.png" width="1290px" height="500px" alt="">
+                        </div>
+                        <div class="catgory_tab_div">
+                            <div class="catgory_tab">
+                                <img src="https://www.beautybebo.com/pub/media/catalog/category/makeup_1.png" alt="">
+                                <p>Makeup</p>
+                            </div>
+                            <div class="catgory_tab">
+                                <img src="	https://www.beautybebo.com/pub/media/catalog/category/skin.png" alt="">
+                                <p>Skin</p>
+                            </div>
+                            <div class="catgory_tab">
+                                <img src="https://www.beautybebo.com/pub/media/catalog/category/hair.png" alt="">
+                                <p>Hair</p>
+                            </div>
+                            <div class="catgory_tab">
+                                <img src="https://www.beautybebo.com/pub/media/catalog/category/personal-care.png" alt="">
+                                <p>Personal Care</p>
+                            </div>
+                            <div class="catgory_tab">
+                                <img src="https://www.beautybebo.com/pub/media/catalog/category/mom-baby-care.png" alt="">
+                                <p>Mom & Baby Care</p>
+                            </div>
+                            <div class="catgory_tab">
+                                <img src="	https://www.beautybebo.com/pub/media/catalog/category/eye_1.png" alt="">
+                                <p>Eye</p>
+                            </div>
+                            <div class="catgory_tab">
+                                <img src="https://www.beautybebo.com/pub/media/catalog/category/fragrance_3.png" alt="">
+                                <p>Fragrance</p>
+                            </div>
+                        </div>
+                        <div class="card_main_deal_of_week">
+                            <div class=" card card1">
+                                <div class="price_text">
+                                    <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/eaadabc6126fdee9eef2f7b7c34a8f4b/m/m/mmm180.jpg"
+                                        width="236px" height="236px" alt="">
+                                    <p class="dicription">Mamaearth After Bite Roll On For Rashes And Insect Bites - Roman Chamomile
+                                        &</p>
+                                    <p>review</p>
+                                    <!-- <span class="price"><s>₹3,900.00</s></span> -->
+                                    <span class="new_price">₹249.00</span>
+                                    <!-- <span class="discount"> 11% off</span> -->
+                                    <br>
+                                    <button class="add_card_btn"><i class="fa-solid fa-basket-shopping"></i> Add To Card</button>
+                                    <span class="herart_icon"><img class="herart_icon_imag" src="download-removebg-preview (1).png"
+                                            width="15px" height="23px"></span>
+                                </div>
+                            </div>
+                            <div class=" card card2">
+                                <div class="price_text">
+                                    <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/eaadabc6126fdee9eef2f7b7c34a8f4b/m/m/mmm161.jpg"
+                                        width="236px" height="236px" alt="">
+                                    <p class="dicription">Mamaearth Easy Tummy Roll On For Indigestion And Colic Relief - Hing And
+                                    </p>
+                                    <p>review</p>
+                                    <!-- <span class="price"><s>₹3,900.00</s></span> -->
+                                    <span class="new_price">₹249.00</span>
+                                    <!-- <span class="discount"> 50% off</span> -->
+                                    <br>
+                                    <button class="add_card_btn"><i class="fa-solid fa-basket-shopping"></i> Add To Card</button>
+                                    <span class="herart_icon"><img class="herart_icon_imag" src="download-removebg-preview (1).png"
+                                            width="15px" height="23px"></span>
+                                </div>
+                            </div>
+                            <div class=" card card3">
+                                <div class="price_text">
+                                    <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/eaadabc6126fdee9eef2f7b7c34a8f4b/u/n/untitled-67.jpg"
+                                        width="236px" height="236px" alt="">
+                                    <p class="dicription">Mamaearth Anti Mosquito Fabric Roll On - Pack Of 3</p>
+                                    <p>review</p>
+                                    <span class="price"><s>₹3,900.00</s></span>
+                                    <span class="new_price">₹1,699.00</span>
+                                    <span class="discount"> 50% off</span>
+                                    <button class="add_card_btn"><i class="fa-solid fa-basket-shopping"></i> Add To Card</button>
+                                    <span class="herart_icon"><img class="herart_icon_imag" src="download-removebg-preview (1).png"
+                                            width="15px" height="23px"></span>
+                                </div>
+                            </div>
+                            <div class=" card card4">
+                                <div class="price_text">
+                                    <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/eaadabc6126fdee9eef2f7b7c34a8f4b/d/o/download_21_.png"
+                                        width="225px" height="300px" alt="">
+                                    <p class="dicription">Biotique Royal Saffron Eau De Parfum</p>
+                                    <p>review</p>
+                                    <span class="price"><s>₹1,500.00</s></span>
+                                    <span class="new_price">₹1,350.00</span>
+                                    <span class="discount"> 10% off</span>
+                                    <button class="add_card_btn"><i class="fa-solid fa-basket-shopping"></i> Add To Card</button>
+                                    <span class="herart_icon"><img class="herart_icon_imag" src="download-removebg-preview (1).png"
+                                            width="15px" height="23px"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image_banner">
+                            <img src="https://www.beautybebo.com/pub/media/ads/MAKEUP.png" width="1290px" height="500px" alt="">
+                        </div>
+                    </section>
+                    <section class="letest_most_best_section">
+                        <div class="letest_most_best">
+                            <div class="best_seller">
+                                <div>
+                                    <h4 class="heading_BEST_SELLER">BEST SELLER</h4>
+                                </div>
+                                <div class="child_div_best_seller">
+                                    <div class="best_card">
+                                        <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/eaadabc6126fdee9eef2f7b7c34a8f4b/1/2/12666_s1-8901030861475_540x_1_.jpg"
+                                            width="120px" height="120px" alt="">
+                                        <div class="best_discription">
+                                            <P>Ponds Pimple Clear Face Wash - Pack Of 2</P>
+                                            <p>review</p>
+            
+                                            <span class="new_price">₹1,699.00</span>
+                                            <br>
+                                            <button class="add_card_btn"><i class="fa-solid fa-basket-shopping"></i> Add To
+                                                Card</button>
+                                            <span class="herart_icon"><img class="herart_icon_imag"
+                                                    src="download-removebg-preview (1).png" width="15px" height="23px"></span>
+                                        </div>
+                                    </div>
+                                    <div class="best_card">
+                                        <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/eaadabc6126fdee9eef2f7b7c34a8f4b/1/2/12666_s1-8901030861475_540x_1_.jpg"
+                                            width="120px" height="120px" alt="">
+                                        <div class="best_discription">
+                                            <P>Ponds Pimple Clear Face Wash - Pack Of 2</P>
+                                            <p>review</p>
+            
+                                            <span class="new_price">₹1,699.00</span>
+                                            <br>
+                                            <button class="add_card_btn"><i class="fa-solid fa-basket-shopping"></i> Add To
+                                                Card</button>
+                                            <span class="herart_icon"><img class="herart_icon_imag"
+                                                    src="download-removebg-preview (1).png" width="15px" height="23px"></span>
+                                        </div>
+                                    </div>
+                                    <div class="best_card">
+                                        <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/eaadabc6126fdee9eef2f7b7c34a8f4b/1/2/12666_s1-8901030861475_540x_1_.jpg"
+                                            width="120px" height="120px" alt="">
+                                        <div class="best_discription">
+                                            <P>Ponds Pimple Clear Face Wash - Pack Of 2</P>
+                                            <p>review</p>
+            
+                                            <span class="new_price">₹1,699.00</span>
+                                            <br>
+                                            <button class="add_card_btn"><i class="fa-solid fa-basket-shopping"></i> Add To
+                                                Card</button>
+                                            <span class="herart_icon"><img class="herart_icon_imag"
+                                                    src="download-removebg-preview (1).png" width="15px" height="23px"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="letest_item">
+                                <div>
+                                    <h4 class="heading_LATEST_PRODUCTS">LATEST PRODUCTS</h4>
+                                </div>
+                                <div class="child_div_best_seller">
+                                    <div class="best_card">
+                                        <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/eaadabc6126fdee9eef2f7b7c34a8f4b/0/8/0806360431009_1.jpg"
+                                            width="120px" height="120px" alt="">
+                                        <div class="best_discription">
+                                            <P>Lotus Herbals Safe Sun Detan After-Sun Face Scrub</P>
+                                            <p>review</p>
+            
+                                            <span class="new_price">₹1,699.00</span>
+                                            <br>
+                                            <button class="add_card_btn"><i class="fa-solid fa-basket-shopping"></i> Add To
+                                                Card</button>
+                                            <span class="herart_icon"><img class="herart_icon_imag"
+                                                    src="download-removebg-preview (1).png" width="15px" height="23px"></span>
+                                        </div>
+                                    </div>
+                                    <div class="best_card">
+                                        <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/eaadabc6126fdee9eef2f7b7c34a8f4b/2/3/2372-d_1_-min.jpg"
+                                            width="120px" height="160px" alt="">
+                                        <div class="best_discription">
+                                            <P>
+                                                Tremendous Wine Sequined Net Reception Wear Lehenga Choli</P>
+                                            <p>review</p>
+            
+                                            <span class="new_price">₹1,699.00</span>
+                                            <br>
+                                            <button class="add_card_btn"><i class="fa-solid fa-basket-shopping"></i> Add To
+                                                Card</button>
+                                            <span class="herart_icon"><img class="herart_icon_imag"
+                                                    src="download-removebg-preview (1).png" width="15px" height="23px"></span>
+                                        </div>
+                                    </div>
+                                    <div class="best_card">
+                                        <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/eaadabc6126fdee9eef2f7b7c34a8f4b/s/w/sw_1016_copy-min.jpg"
+                                            width="120px" height="160px" alt="">
+                                        <div class="best_discription">
+                                            <P>Exquisite Teal Blue Cording Embroidered Festive Wear Silk</P>
+                                            <p>review</p>
+            
+                                            <span class="new_price">₹1,699.00</span>
+                                            <br>
+                                            <button class="add_card_btn"><i class="fa-solid fa-basket-shopping"></i> Add To
+                                                Card</button>
+                                            <span class="herart_icon"><img class="herart_icon_imag"
+                                                    src="download-removebg-preview (1).png" width="15px" height="23px"></span>
+                                        </div>
+                                    </div>
+            
+                                </div>
+                            </div>
+                            <div class="most_view">
+                                <div>
+                                    <h4 class="heading_MOST_VIEWED">MOST VIEWED</h4>
+                                </div>
+                                <div class="child_div_best_seller">
+                                    <div class="best_card">
+                                        <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/eaadabc6126fdee9eef2f7b7c34a8f4b/a/n/anti-ageing_1.jpg"
+                                            width="120px" height="120px" alt="">
+                                        <div class="best_discription">
+                                            <P>Lotus Herbals Safe Sun Detan After-Sun Face Scrub</P>
+                                            <p>review</p>
+            
+                                            <span class="new_price">₹1,699.00</span>
+                                            <br>
+                                            <button class="add_card_btn"><i class="fa-solid fa-basket-shopping"></i> Add To
+                                                Card</button>
+                                            <span class="herart_icon"><img class="herart_icon_imag"
+                                                    src="download-removebg-preview (1).png" width="15px" height="23px"></span>
+                                        </div>
+                                    </div>
+                                    <div class="best_card">
+                                        <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/eaadabc6126fdee9eef2f7b7c34a8f4b/u/n/untitled-142_1.jpg"
+                                            width="120px" height="120px" alt="">
+                                        <div class="best_discription">
+                                            <P>
+                                                Tremendous Wine Sequined Net Reception Wear Lehenga Choli</P>
+                                            <p>review</p>
+            
+                                            <span class="new_price">₹1,699.00</span>
+                                            <br>
+                                            <button class="add_card_btn"><i class="fa-solid fa-basket-shopping"></i> Add To
+                                                Card</button>
+                                            <span class="herart_icon"><img class="herart_icon_imag"
+                                                    src="download-removebg-preview (1).png" width="15px" height="23px"></span>
+                                        </div>
+                                    </div>
+                                    <div class="best_card">
+                                        <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/eaadabc6126fdee9eef2f7b7c34a8f4b/1/_/1_210_4.jpg"
+                                            width="120px" height="120px" alt="">
+                                        <div class="best_discription">
+                                            <P>Exquisite Teal Blue Cording Embroidered Festive Wear Silk</P>
+                                            <p>review</p>
+            
+                                            <span class="new_price">₹1,699.00</span>
+                                            <br>
+                                            <button class="add_card_btn"><i class="fa-solid fa-basket-shopping"></i> Add To
+                                                Card</button>
+                                            <span class="herart_icon"><img class="herart_icon_imag"
+                                                    src="download-removebg-preview (1).png" width="15px" height="23px"></span>
+                                        </div>
+                                    </div>
+            
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="letest_most_best_section">
+                        <div class="image_banner2">
+                            <img class="image3" src="https://www.beautybebo.com/pub/media/ads/navratri_.png" width="1290px" height="500px" alt="">
+                        </div>
+                    </section>
+                    <section class="description_section">
+                        <div class="description_text">
+                            <div>
+                                <h2>Welcome to Beauty Products Online Shopping India- Beauty Bebo</h2>
+                            </div>
+                            <div class="description_para">
+                                <p id="read_more">If you are looking for a flawless radiant face outlook for a special occasion, then we have the
+                                    perfect tips for you. As you must already know, the conspicuous flawless outlook you want for
+                                    your wedding, a date, a dinner party or for a modelling competition is only achieved through
+                                    makeup.
+                                    <br>
+                                    Don’t get me wrong, you are naturally beautiful, that’s obvious. But everyone else is, so how
+                                    will you will you ensure that you are different? Read on for hot irresistible tips before you
+                                    <b>buy beauty products online!</b>
+                                    <br>
+                                    <b>Clean Your Face First!</b>
+                                    <br>
+                                    Before embarking on any makeup, always ensure that your face is clean. Need some assistance in
+                                    absolute cleaning? Visit our range of face wash <b>beauty products online</b> for your best
+                                    pick. We
+                                    have made it our duty to carefully select the best products for you, so that you don’t
+                                    experience breaks and allergies after use. So now you can be confident that your <b>buy cosmetic
+                                        online shopping</b> will be worth your time and effort.
+                                    <br>
+                                    Wondering then how you will make a choice among the spectrum available? Most of our products are
+                                    purely natural in ingredient, so you can as well check for your favorite ingredient combination.
+                                    If not sure, we are still here for you. We can help narrow down your options, together with you.
+                                    <br>
+                                    <b>Apply a Moisturizer</b>
+                                    <br>
+                                    <span id="read-more-content" style="display: none;">Next, you need a moisturizer in your <b class="link_para">makeup kit</b>. Moisturizers keep your face glowing regardless
+                                    of the mood of the day. Most essentially, moisturizers will keep your skin hydrated from the
+                                    outside, while your constant hydration by taking fluids enhance the efforts.
+                                    <br>
+                                    Our moisturizers range from matte, ponds, creams and gels, all to ensure that your specific need
+                                    is met. Just go through the list for a better selection, which will aid you through your
+                                <b>cosmetic online shopping</b>. With the best moisturizer, it will also work as a primer. Hence, you
+                                    don’t have to buy an extra product, which saves you some cost.
+                                    <br>
+                                <b>Get Your Makeup Kit</b>
+                                    <br>
+                                    Your general makeup will consist, of more than the moisturizer. Some o the other major
+                                    components include the foundation, which you use on your whole face. Then there is the
+                                    concealer, which you concentrate on areas of the face you want to hide. There is the brightener
+                                    and highlighter, which you will highlight areas you want conspicuous on your face.
+                                    <br>
+                                    And don’t forget to look into our range of toners for your best shot at a firmer face and neck.
+                                    <br>
+                                    We have the most effective <b class="link_para">beauty products India </b>has dreamt of to replenish your kit, so don’t
+                                    miss out!
+                                    <br>    
+                                <b>Enhance the Outlook of the Eyes</b>
+                                    <br>
+                                    At this point, your eyebrows should be in the shape and size you want them to be. Now you can
+                                    brush them up to bring out a perfect outlook. Apply eye pencil to cover any gaps within the
+                                    eyebrows for an ideal outlook.
+                                    <br>
+                                    If the area surrounding your eyes has a different color shade, probably more tanned or lighter
+                                    in color in comparison to your general face color, then pay attention to the area.
+                                    <br>
+                                    Use concealers to bring out the perfect shade you want for a uniform outlook. Alternatively, you
+                                    can use the highlighter to bring attention to your eyes, which even adds to a seemingly
+                                    large-eye size.
+                                    <br>
+                                    If your eyes are starting to show wrinkles, then our under-eye wrinkle creams from our <b>cosmetic
+                                    online shop</b> should come in handy.
+                                    <br>
+                                    Want to finish up with a luminating cosmetic product for a conspicuously radiant look? Go ahead
+                                    and make your <b class="link_para">makeup</b> experience more appealing.
+                                    <br>
+                                <b>Your Lips?</b>
+                                    <br>
+                                    For a natural beauty look, go for a glossy lip gloss or a light lipstick. Or are you going out
+                                    with the girls, and thicker lips your way? Our range of matte lipstick collection should work
+                                    for you.
+                                    <br>
+                                <b>Bottom Line</b>
+                                    <br>
+                                    Want to <b class="link_para">buy beauty products online</b> to improve your makeup kit? We are always there for you,
+                                    ready to help.
+                                    <br>
+                                    All you have to do is take a step, look into our products and try us. Looking forward to seeing
+                                    you!
+                                </span>
+                                </p>
+                                <script src="beautybebo JS.js"></script>
+                                <button onclick="toggleReadMore()" id="read-more-button">Read More</button>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            <!-- </div> -->
+
+            <!-- this is footer section -->
+            <div class="main_footer">
+                <div class="middle_footer1">
+
+                    <div class="inner1">
+                        <div class="innermost">
+                            <p style="color: #ffffff; font-weight: bold;font-family: 'Roboto', sans-serif">CONTACT INFO
+                            </p>
+                            <ul>
+                                <li>(+91) 7877061041</li>
+                                <li>sales@beautybebo.com</li>
+                                <li>Open time: 10:00AM - 7:00PM</li>
+                                <div class="social">
+                                    <div class="fb">
+                                        <p>f</p>
+                                    </div>
+                                    <div class="fb">
+                                        <div class="insta">
+                                            <img src="images/instagram.svg" alt="instagram logo">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="innermost">
+                            <p style="color: #ffffff; font-weight: bold;font-family: 'Roboto', sans-serif">QUICK LINKS
+                            </p>
+                            <ul>
+                                <li>About us</li>
+                                <li>Contact Us</li>
+                                <li>Terms & Conditions</li>
+                                <li>Privacy Policy</li>
+                                <li>Return and Refund Policy</li>
+                                <li>Shipping Policy</li>
+                            </ul>
+                        </div>
+                        <div class="innermost">
+                            <p style="color: #ffffff; font-weight: bold;font-family: 'Roboto', sans-serif">CUSTOMER INFO
+                            </p>
+                            <ul>
+                                <li>My Account</li>
+                                <li>Track your Order</li>
+                                <li>Order Returns</li>
+                                <li>Wishlist</li>
+                                <li>News</li>
+                                <li>FAQ</li>
+                            </ul>
+                        </div>
+                        <div class="innermost">
+                            <p style="color: #ffffff; font-weight: bold;font-family: 'Roboto', sans-serif">CATEGORIES
+                            </p>
+                            <ul>
+                                <li>Makeup</li>
+                                <li>Skin</li>
+                                <li>Hair</li>
+                                <li>Personal Care</li>
+                                <li>Mom & Baby Care</li>
+                                <li>Fragrance</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="inner2">
+                        <div class="container">
+                            <div class="images"><img src="images/payment.png" alt="payment"
+                                    style="height: 30px; width: 280px;"></div>
+                            <div class="footernews">
+                                <h4 style="color: #ffffff;font-family: 'Roboto', sans-serif;
+                        font-weight: bold; ">signup for newsletter</h4>
+                            </div>
 
 
-    <script src="app.js"></script>
+                            <div class="signup">
+                                <input type="text" placeholder="Signup for newsletter" id="newsletter">
+                                <div><button id="Subscribe">Subscribe</button></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="middle_footer2">
+                    <h4> 2020 All Rights Reserved.</h4>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="app.js"></script>
 </body>
+
 </html>
